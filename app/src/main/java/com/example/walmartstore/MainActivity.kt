@@ -27,8 +27,11 @@ class MainActivity : AppCompatActivity() {
 
         singin.setOnClickListener {
 // Change the Label Text
-            Toast.makeText(this, "Hi there! This is a Toast.", Toast.LENGTH_LONG).show()
+            arrayList.contains(userName.text.toString().equals(arrayList))
+           for(user in arrayList){
+              if(userName.text.toString().equals(user.username) && password.text.toString().equals(user.password))
 
+           }
         }
     }
 
