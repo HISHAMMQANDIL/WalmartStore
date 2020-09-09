@@ -2,59 +2,55 @@ package com.example.ecommerce.Model
 
 class Users {
 
-    private lateinit var name: String
+    private lateinit var firstName: String
     private lateinit var password: String
-    private lateinit var phone: String
-    private lateinit var image: String
-    private lateinit var address: String
+    private lateinit var userName: String
+    private lateinit var lastName: String
+
     constructor()
 
-    constructor(name: String, password: String, phone: String, image:String, address:String) {
-        this.name = name
+    constructor(name: String, password: String, userName: String, lastName:String) {
+        this.firstName = name
         this.password = password
-        this.phone = phone
-        this.image = image
-        this.address = address
+        this.userName = userName
+        this.lastName = lastName
+
     }
 
-    fun getName():String {
-        return name
+    fun getfirstName():String {
+        return firstName
     }
 
     fun getPassword():String {
         return password
     }
 
-    fun getPhone():String {
-        return phone
+    fun getUserName():String {
+        return userName
     }
 
     fun getImage():String {
-        return image
+        return lastName
     }
 
-    fun getAddress():String {
-        return address
-    }
 
-    fun setName(name:String) {
-        this.name = name
+
+    fun setFirstName(name:String) {
+        this.firstName = name
     }
 
     fun setPassword(password: String) {
         this.password = password
     }
 
-    fun setPhone(phone:String) {
-        this.phone = phone
+    fun setLasrName(lastname:String) {
+        this.lastName = lastName
     }
 
     fun setImage(image:String) {
-        this.image = image
+        this.lastName = image
     }
 
-    fun setAddress(address:String) {
-        this.address = address
-    }
+
 
 }
